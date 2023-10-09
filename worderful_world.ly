@@ -8,13 +8,14 @@
     \set majorSevenSymbol = \markup { maj7 }
     \set additionalPitchPrefix = "add"
     f2.:maj7 s s s f:maj7 a:m7 s bes:maj7 a:m7 s s g:m7
-    f:maj7 s s e:dim d:m7 s s s des:maj7 s c:6.9^3 c:7 s f:maj7
+    f:maj7 s s e:dim d:m7 s s s des:maj7 s c:6.9^3 c:7 f:maj7
   }
   \new Staff {
     \relative c, {
       \clef bass
       \key f \major
       \time 3/4
+      \tempo 4 = 120
 
       f2 f4 f2 f4 f2 f4  r2. \fermata \bar "||" \break
       f2 f4 a2 a4 a2 a4 bes2 bes4 a2 a4 a2 a4 a2 a4
@@ -27,4 +28,6 @@
     }
   }
   >>
+  \layout {}
+  \midi {}
 }
